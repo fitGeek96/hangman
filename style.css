@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+body {
+    background-color: #34495e;
+    color: white;
+}
+
+h1 {
+    color: tomato;
+    padding: 2rem;
+    font-size: 3rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.game__header p {
+    color: rgb(189, 184, 189);
+    padding: 1rem;
+}
+
+.game__body {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.game__container {
+    text-align: center;
+}
+
+.wrong__letters__container {
+    padding-top: 1rem;
+    padding-left: 5rem;
+}
+
+
+
+.word {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.letter {
+    display: block;
+    padding: 0 1rem;
+    font-size: 1.5rem;
+    border-bottom: 3px solid teal;
+    border-radius: 3px;
+    margin: 0 .2rem;
+}
+
+.figure__container {
+    fill: transparent;
+    stroke: white;
+    stroke-width: 4px;
+    stroke-linecap: round;
+}
+
+.figure__part {
+    visibility: hidden;
+}
+
+.popup__container {
+    visibility: hidden;
+    background: rgb(35, 59, 59, .5);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup {
+    background-color: teal;
+    text-align: center;
+    box-shadow: 0 15px 10px 3px rgb(0, 0, 0, .1);
+    padding: 2rem;
+}
+
+.final__message {
+    padding: 1rem;
+}
+
+.notification__container {
+    position: fixed;
+    left: 50%;
+    bottom: -50px;
+    transform: translateX(-50%);
+    background-color: rgb(35, 59, 59);
+    padding: .4rem;
+    transition: transform .3s ease-in-out;
+}
+
+.notification__container.show {
+    transform: translate(-50%, -50px);
+}
+
+#wrong__letters {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    font-weight: bold;
+}
+
+#wrong__letters p {
+    padding: 0 0 2rem 0;
+}
+
+
+
+
+button {
+    background-color: tomato;
+    padding: .3rem 1rem;
+    color: white;
+    border: 0;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.3);
+}
+
+button:focus {
+    outline: 0;
+}
